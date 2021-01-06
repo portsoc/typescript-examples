@@ -5,8 +5,9 @@
     "strictNullChecks": true,
     "strict": true,
     "noImplicitAny": true,
-    "target": "es2019",
+    "target": "es2020",
     "moduleResolution": "node",
+    "module": "CommonJS",
     "allowJs": true
   },
   "include": [
