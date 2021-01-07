@@ -1,5 +1,5 @@
-function welcome(obj) {
-  console.log('hi', obj.name);
+function welcome(somebody) {
+  console.log('hi', somebody.name);
 }
 
 welcome();
