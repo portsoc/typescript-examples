@@ -1,3 +1,13 @@
+export interface Contact {
+  name: string,
+  phone: string,
+  address?: string,
+}
+
+function call(c: Contact) {
+  console.log('calling', c.phone);
+}
+
 interface AddressBookItem {
   name: string,
   phone: string,

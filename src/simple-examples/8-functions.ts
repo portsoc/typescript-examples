@@ -3,11 +3,11 @@ function add1(a: number, b: number): number {
 }
 
 function add2(a: number, b?: number): number {
-  return b == null ? a : a + b;
+  return b !== undefined ? a + b : a;
 }
 
 function add3(a: number, b = 0): number {
-  return b == null ? a : a + b;
+  return a + b;
 }
 
 function add4(...arr: number[]): number {

@@ -1,7 +1,7 @@
 const msg: string = "hello, world";
 let max: number = 0;
 
-const msg2 = "hello, world";
+let msg2 = "hello, world";
 let max2 = 0;
 
 function greet(name: string): void {

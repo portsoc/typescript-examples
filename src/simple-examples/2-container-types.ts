@@ -1,8 +1,12 @@
-const names: string[] = ['Matt', 'Rich', 'Jack'];
+let names: string[];
+let rgbColour: [number, number, number];
+let droid: object;
 
-const rgbColour: [number, number, number] = [255, 0, 0];
+names = ['Matt', 'Rich', 'Jack'];
 
-const droid: object = {
+rgbColour = [255, 0, 0];
+
+droid = {
   name: 'C3-PO',
   color: 'golden',
 };
