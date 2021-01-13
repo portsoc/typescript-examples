@@ -20,3 +20,11 @@ export function sortArray<T extends unknown>(
   }
   return arr;
 }
+
+// interface Something { value: number }
+// const things: Something[] = [];
+// function compare(a: Something, b: Something) { return a.value - b.value; }
+//
+// const outcome = sortArray(things, compare);
+//
+// console.log(outcome[0].value);
