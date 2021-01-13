@@ -9,3 +9,12 @@ export function sortArray(
   arr.sort(compare);
   return arr;
 }
+
+
+function compare(a: Something, b: Something) {
+  return a.value - b.value;
+}
+
+const things: Something[] = [];
+
+const sorted = sortArray(things, compare);
