@@ -21,10 +21,14 @@ export function sortArray<T extends unknown>(
   return arr;
 }
 
-// interface Something { value: number }
-// const things: Something[] = [];
-// function compare(a: Something, b: Something) { return a.value - b.value; }
-//
-// const outcome = sortArray(things, compare);
-//
-// console.log(outcome[0].value);
+export interface Person {
+  age: number,
+  height: number,
+}
+
+const people: Person[] = [{ age: 18, height: 180 }];
+function compareByAge(a: Person, b: Person) { return a.age - b.age; }
+
+const outcome = sortArray(people, compareByAge);
+
+console.log(outcome[0].age);

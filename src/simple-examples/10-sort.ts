@@ -1,20 +1,25 @@
-export interface Something {
-  value: number
+export interface Person {
+  age: number,
+  height: number,
 }
 
-export function sortArray(
-  arr: Something[],
-  compare: (a: Something, b: Something) => number,
-): Something[] {
+export function sortPeople(
+  arr: Person[],
+  compare: (a: Person, b: Person) => number,
+): Person[] {
   arr.sort(compare);
   return arr;
 }
 
 
-function compare(a: Something, b: Something) {
-  return a.value - b.value;
+function compareByAge(a: Person, b: Person) {
+  return a.age - b.age;
 }
 
-const things: Something[] = [];
+function compareByHeight(a: Person, b: Person) {
+  return a.height - b.height;
+}
 
-const sorted = sortArray(things, compare);
+const people: Person[] = [{ age: 18, height: 180 }];
+
+const sorted = sortPeople(people, compareByAge);

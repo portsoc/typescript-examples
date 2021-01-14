@@ -3,6 +3,11 @@ export function pick<T>(arr: T[]): T {
   return arr[index];
 }
 
-const x = pick<number>([1, 2]);
 
+const arr1: number[] = [11, 2, 1, 22];
+const arr2: string[] = ["b", "a"];
+
+const outcome = pick(arr1);
+
+const x = pick([1, 2]);
 const y = pick(["a", "b"]);

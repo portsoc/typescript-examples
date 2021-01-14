@@ -1,32 +1,24 @@
-const r1: () => number = Math.random;
-
-const r2: (() => number) = Math.random;
+let r1: () => number;
 
 type NumberFunction = () => number;
-const r3: NumberFunction = Math.random;
+let r2: NumberFunction;
 
-console.log(r1(), r2(), r3());
+r1 = Math.random;
+r2 = Math.random;
+
+// r1 = console.log;
+
+console.log(r1(), r2());
+
 
 
 interface FunInterface {
   fun: () => number
 }
-const r4: FunInterface = {
-  fun: Math.random
-};
 
+let r3: FunInterface;
+r3 = { fun: Math.random };
 
-interface FunInterface2 {
-  fun(): number
-}
-const r5: FunInterface2 = {
-  fun: Math.random
-};
+// r3.fun = console.log;
 
-
-interface NumFunInterface {
-  (): number
-}
-const r6: NumFunInterface = Math.random;
-
-console.log(r4.fun(), r5.fun(), r6());
+console.log(r3.fun());
