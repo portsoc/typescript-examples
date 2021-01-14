@@ -20,6 +20,6 @@ function compareByHeight(a: Person, b: Person) {
   return a.height - b.height;
 }
 
-const people: Person[] = [{ age: 18, height: 180 }];
+const people: Person[] = [{ age: 18, height: 180 }, {age: 20, height: 170}];
 
 const sorted = sortPeople(people, compareByAge);
